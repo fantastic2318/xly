@@ -1,0 +1,16 @@
+ inner
+1701180678.466424
+inner,hahha
+1701180678.466424
+inner,outer
+1701180678.466424
+inner,outer
+1701180678.466424
+inner,fighting
+1701180678.466424
+m = list(map(lambda x: x.split('.'), list1))
+    s = sorted(m, reverse=False)
+    l = list(map(lambda x: '.'.join(x), s))
+    print(l)
+    b = sorted(list1)
+    print(b)

@@ -1,0 +1,12 @@
+2024-01-01 11:50:22.817 | INFO     | data_fra_v4.Util.Log:info:21 - {'username': 'fantastic2318', 'password': 'fantastic12306'}
+2024-01-01 11:50:22.818 | INFO     | data_fra_v4.Util.Log:info:21 - V1测试用例 数据驱动
+2024-01-01 11:50:22.818 | INFO     | data_fra_v4.Util.Log:info:21 - ---脚本登录---
+2024-01-01 11:50:22.818 | INFO     | data_fra_v4.Util.Log:info:21 - module方法登录
+2024-01-01 11:50:22.940 | INFO     | data_fra_v4.Util.Log:info:21 - object--输入密码
+2024-01-01 11:50:23.002 | INFO     | data_fra_v4.Util.Log:info:21 - 登录动作
+2024-01-01 11:50:31.561 | INFO     | data_fra_v4.Util.Log:info:21 - {'username': 'fantastic2319', 'password': 'fantastic12306'}
+2024-01-01 11:50:31.562 | INFO     | data_fra_v4.Util.Log:info:21 - V1测试用例 数据驱动
+2024-01-01 11:50:31.563 | INFO     | data_fra_v4.Util.Log:info:21 - ---脚本登录---
+2024-01-01 11:50:31.563 | INFO     | data_fra_v4.Util.Log:info:21 - module方法登录
+2024-01-01 11:50:31.691 | INFO     | data_fra_v4.Util.Log:info:21 - object--输入密码
+2024-01-01 11:50:31.753 | INFO     | data_fra_v4.Util.Log:info:21 - 登录动作
