@@ -1,0 +1,23 @@
+url: 'http://!host:!port/cat_add'
+method: post
+headers:
+  content-type: application/json
+json:
+  id: 66
+  name: 'rrr'
+  age: 12
+assert:
+  - errorMsg: code 不为 200
+    target: $.code
+    value: '200'
+    type: equals
+  - errorMsg: 返回结果不成功
+    target: $.success
+    value: 'true'
+    type: equals
+extract_options:
+  - target: $.data
+    varname: cat_id
+
+
+

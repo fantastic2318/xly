@@ -1,0 +1,16 @@
+context:
+  host: 127.0.0.1
+  port: 5000
+
+steps:
+  - !include /Users/wufan/git_project/pythonProject/interFace2/TestData/add_cat_1.yaml
+
+  - url: 'http://!host:!port/cat_detail/!cat_id'
+    method: get
+    assert_options:
+      - errorMsg: code 不为 200
+        target: $.code
+        value: '200'
+        type: equals
+
+

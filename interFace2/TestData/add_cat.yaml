@@ -1,0 +1,35 @@
+context:
+  host: 127.0.0.1
+  port: 5000
+url: 'http://!host:!port/cat_add'
+method: post
+headers:
+  content-type: application/json
+json:
+  id: '!id'
+  name: '!name'
+  age: '!age'
+assert:
+  - errorMsg: code 不为 200
+    target: $.code
+    value: '200'
+    type: equals
+  - errorMsg: 返回结果不成功
+    target: $.success
+    value: 'true'
+    type: equals
+extract_options:
+  - tagert: $.data
+    varname: cat_id
+
+
+
+ddts:
+  - id: 556
+    name: cc2
+    age: 30
+    desc: '正常场景'
+  - id: 557
+    name: cc3
+    age: 31
+    desc: '异常的场景'

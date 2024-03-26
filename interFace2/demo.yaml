@@ -1,0 +1,71 @@
+# 字符串默认不用引号
+strvalue: hello
+
+# 布尔值 true false
+boolvalue: true
+boolvalue1: false
+
+# 整数
+intvalue: 10
+
+# 浮点数
+floatvalue: 2.1234
+
+# null值 用~
+nullvalue: ~
+
+# 时间 时间用ISO8601格式，日期和时间用T 来连接 最后用+ 代表时区
+datetimevalue: !!timestamp 2024-03-10T09:53:31+08:00
+data.value: !!timestamp 2024-03-10 (yyyy-mm-dd)
+
+
+# 表示对象 使用缩进层级 表示一个对象
+#person: {name:张三, age:20,sex:M} 一种表示方式
+person:
+   name: 张三
+   age: 18
+   sex: M
+
+# 数组 可以用短横加空格 -开头的行 就是数组的一个元素
+person1:
+   name: 张三
+   age: 18
+   sex: M
+   hobbies: [篮球,足球，排球]
+   hobbies1:
+     - 篮球
+     - 足球
+     - 网球
+     - BOOK:
+         - 科幻书
+         - 小说
+         - 教科书
+
+   hobbies2:
+     - [篮球 足球 排球]
+     - BOOK:
+         - 科幻书
+         - 小说
+         - 教科书
+
+url: http://127.0.0.1/cat_add
+method: post
+headers:
+  content-type: application/json
+payload:
+  id: 5
+  name: sss
+  age: 10
+assert:
+  - errormsg: 错误
+    target: $.code
+    value: '200'
+    type: equals
+  - errormsg: token不存在
+    target: $.token
+    value: 'dfdfdfdf'
+    type: in
+extract_options:
+  - tagert: $.code
+    varname: xxx
+

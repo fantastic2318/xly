@@ -18,9 +18,9 @@ def execute_case():
     """
     #test_loginandContractsAndSend()
     content = generate_report()
-    email = SendEmail()
-    now = time.strftime("%Y-%m-%d")
-    email.send_email(f"陈信宏为什么开会唱歌自动化测试标题-{now}", content)
+    # email = SendEmail()
+    # now = time.strftime("%Y-%m-%d")
+    # email.send_email(f"陈信宏为什么开会唱歌自动化测试标题-{now}", content)
 
 
 def job1():

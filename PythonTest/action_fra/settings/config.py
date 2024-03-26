@@ -9,10 +9,10 @@ testDataPath = os.path.join(BASE_DIR, 'TestData')
 
 # 日志文件路径
 
-# logfilePath = os.path.join(BASE_DIR, 'Logfile')
+logfilePath = os.path.join(BASE_DIR, 'Logfile')
 
 # 添加测试用例路径
-# testCasePath = os.path.join(BASE_DIR, 'Scripts')
+testCasePath = os.path.join(BASE_DIR, 'Scripts')
 
 # 测试报告路径
-# testReportPath = os.path.join(BASE_DIR, 'Reports')
+testReportPath = os.path.join(BASE_DIR, 'Reports')

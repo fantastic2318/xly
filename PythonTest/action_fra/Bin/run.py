@@ -3,7 +3,8 @@ import unittest
 import TestRunner
 from TestRunner import SMTP
 
-from action_fra.settings.config import testCasePath, testReportPath
+from PythonTest.action_fra.settings.config import testCasePath, testReportPath
+
 
 """
 整个框架从此处开始运行
